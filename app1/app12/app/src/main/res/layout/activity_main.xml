@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <!-- Título -->
+        <TextView
+            android:id="@+id/txtHola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello World!"
+            android:textSize="24sp"
+            android:layout_gravity="center" />
+
+        <!-- CheckBox -->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkbox"
+            android:layout_gravity="center" />
+
+        <!-- Botón "Imprimir" -->
+        <Button
+            android:id="@+id/btnHola"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Imprimir"
+            android:layout_gravity="center" />
+
+        <!-- Calendario -->
+        <CalendarView
+            android:id="@+id/calendarView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+        <!-- EditText para mensaje -->
+
+        <!-- ImageButton para ir al segundo Activity -->
+
+        <EditText
+            android:id="@+id/textView"
+            android:layout_width="336dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="16dp"
+            android:hint="Ingrese mensaje"
+            android:text="Hola" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            app:srcCompat="@android:drawable/btn_dialog"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:layout_marginTop="16dp" />
+    </LinearLayout>
+</RelativeLayout>
